@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <header>
+      <img src="img/logo.svg" alt="">
+      <div class="tabs">
+        <!-- <div class="logo"></div> -->
+        <button class="tablinks" data-type="sign-in">
+          <p>Log in</p>
+        </button>
+        <button class="tablinks  active" data-type="sign-up">
+          <p>Sign up</p>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div id="sign-in" class="tabcontent">
+        <form class="form" action="#">
+          <div class="email-form">
+            <input class="email-form__input" type="email" placeholder="Email adress" required>
+
+            <input class="email-form__input" type="password" placeholder="Password" required>
+            <button class="email-form__submit  log-in-tab">
+              Log in
+          </div>
+        </form>
+      </div>
+
+      <div id="sign-up" class="tabcontent  active">
+        <form class="form" action="#">
+          <div class="email-form">
+            <input class="email-form__input" type="email" placeholder="Email adress" required>
+
+            <input id="btnFirst" class="email-form__input" type="password" placeholder="Password" required>
+            <input id="btnSecond" class="email-form__input" type="password" placeholder="Repeat password" required>
+            <div class="warning-message">
+              <p>Password must be the same.</p>
+            </div>
+            <div class="email-form__checkbox">
+              <input type="checkbox" id="email-form__checkbox__accept">
+              <label for="email-form__checkbox__accept">
+                I agree to the rules set out by the User agreement and Privacy policy.
+              </label>
+            </div>
+            <button class="email-form__submit email-form__submit--sign-up" disabled="">
+              Sign Up
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    </div>
+  </section>
+
+  <script src="scripts/tabs.js"></script>
+  <script src="scripts/button.js"></script>
+  <script src="scripts/password.js"></script>
+</body>
+
+</html>

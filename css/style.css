@@ -1,0 +1,157 @@
+:root {
+  --textWhite: #f5f5f7;
+  --textLighter: #807c7c;
+  --textLightest: #f3f3f3;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #323236;
+}
+
+section {
+  text-align: center;
+}
+
+header {
+  background-color: #242429;
+  padding-top: 20px;
+}
+
+.tabs {
+  
+}
+
+.tablinks {
+  position: relative;
+  color: var(--textLighter);
+  border: none;
+  background: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: .2s;
+  outline: 0;
+  width: 200px;
+}
+
+.tablinks.active {
+  color: var(--textLightest);
+}
+
+.tablinks:hover {
+  color: var(--textWhite);
+  cursor: pointer;
+}
+
+.tablinks.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, #f87d28, #face5a);
+  border-radius: 4px 4px 0 0;
+}
+
+
+
+.container {
+  margin-top: 30px;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+.form {
+  color: #898989;
+  text-align: left;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.email-form {
+  color: #898989;
+}
+
+.email-form__input {
+  font-size: 16px;
+  padding: 15px 10px;
+  color: #f5f5f7;
+  background-color: #3c3c40;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #626262;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.email-form__input:hover {
+  background-color: #46464c;
+  border-color: #7c7c7d;
+}
+
+.email-form__input:focus {
+  outline: 0;
+}
+
+
+
+.email-form__checkbox {
+  margin: 25px 0 30px 0;
+}
+
+.email-form__checkbox label:hover {
+  cursor: pointer;
+}
+
+#email-form__checkbox__accept {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+.email-form__submit {
+  color: black;
+  padding: 15px;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  outline: 0;
+  border: none;
+}
+
+.email-form__submit:hover {
+  cursor: pointer;
+}
+
+.email-form__submit:disabled {
+  color: #262626;
+  background-color: #414141;
+  pointer-events: none;
+  cursor: default;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.warning-message {
+  display: none;
+  color: red;
+}
+
+.log-in-tab {
+  margin-top: 20px;
+}
