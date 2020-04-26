@@ -1,6 +1,6 @@
 const btnFirst = document.getElementById('btnFirst');
 const btnSecond = document.getElementById('btnSecond');
-const signButton = document.querySelector('.email-form__submit');
+const signButton = document.querySelector('.email-form__submit--sign-up');
 const warningMessage = document.querySelector('.warning-message');
 
 signButton.addEventListener('click', function () {

@@ -1,9 +1,6 @@
 const tabLinks = document.querySelectorAll(".tablinks");
 const tabContent = document.querySelectorAll(".tabcontent");
 
-console.log(tabLinks);
-console.log(tabContent);
-
 tabLinks.forEach(function (e) {
   e.addEventListener("click", openTabs);
 });
